@@ -1,0 +1,50 @@
+#gridDiv {
+    height: 15em;
+}
+
+.claro {
+    font-family: Tahoma;
+    font-size: 9pt;
+}
+
+.dojoxGrid td {
+    height: 20px;
+}
+
+.sgd_frame_div {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.sgd_search_div {
+    width: 30%;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.sgd_search {
+    border: 1px black solid;
+    width: 100%;
+}
+
+.sgd_button_div {
+    margin-left: 20px;
+    float: left;
+}
+
+.sgd_add {
+    width: 30px;
+}
+
+.sgd_remove {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.sgd_grid_div {
+    clear: both;
+    width: 100%;
+    height: 80%;
+}
