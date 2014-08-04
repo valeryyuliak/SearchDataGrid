@@ -122,11 +122,13 @@ SearchDataGrid.prototype.applyFilter = function() {
     var i;
     var _filter = dojo.byId(this.search_id).value;
 
+    _filter = "*"+_filter+"*";
+    _filter.replace(/([\\"'])/g, "\\$1").replace(/\0/g, "\\0");
+
     this.filter = "";
     for(i = 0; i < this.fields.length; i++)
-        this.filter = this.filter + " OR " + this.fields[i] + ":'*" +
-                      _filter + "*'";
-
+        this.filter = this.filter + " OR " + this.fields[i] + ":" + _filter ;
+        
     this.filter = this.filter.substring(4);
 
     this.grid.filter({complexQuery: this.filter});
